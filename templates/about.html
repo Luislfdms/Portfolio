@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='about.css') }}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    
+    <header>
+        <h1 class="bordered-text">About Me</h1>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>Who Am I?</h2>
+            <p>{{ about_text }}</p>
+        </section>
+
+        <section class="links">
+            <h2>Links:</h2>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/luis-souto/" target="_blank">{{ linkedin_link}} </a></p>
+            <p>Github: <a href="https://github.com/Luislfdms" target="_blank">{{ github_link }}</a></p>
+        </section>
+        
+        <section class="contact">
+            <h2>Contact Information:</h2>
+            <p>Email: {{ contact_email }}</p>
+            <p>Phone: {{ contact_phone }}</p>
+        </section>
+    </main>
+
+    <div class="image-grid">
+        <div class="image top-left">
+            <img src="https://drive.google.com/uc?export=view&id=1M-2RpxgM6coWHI9tvB9E4RFhQOVSKDxn" width=500px height=650px alt="Boo">
+        </div>
+        <div class="image bottom-left">
+            <img src="https://drive.google.com/uc?export=view&id=1H3whgfs8I8b97ZII0_Tdz4Fqex5YUSoW" width=500px alt="Kendo">
+        </div>
+        <div class="image top-right">
+            <img src="https://drive.google.com/uc?export=view&id=1oDkxwYsyO7P7zH6oqKlyR9ZNhkvjIabO" width=500px alt="Volleyball">
+        </div>
+        <div class="image bottom-right">
+            <img src="https://drive.google.com/uc?export=view&id=1uUn9-tRJqsVCdHwVpW_r8d9rSiJ51X_M" width=500px alt="Yosemite">
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>

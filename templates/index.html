@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Luis's Portfolio</h1>
+        </header>
+        <svg viewBox='0 0 110 110'>
+            <a href="{{ url_for('projects.projects') }}"><path class="circle-content" d='M55,55 L105,55 A50,50 0 0,1 30,98.30z' /></a>
+            <a><text class="project-text" x='55' y='15'>Projects</text></a>
+            <a href="{{ url_for('experience.experience') }}"><path class="circle-content" d='M55,55 L30,98.30 A50,50 0 0,1 30,11.7z' /></a>
+            <a><text class="experience-text"x='55' y='16'>Experience</text></a>
+            <a href="{{ url_for('about.about') }}"><path class="circle-content" d='M55,55 L30,11.70 A50,50 0 0,1 105,55z' /></a>
+            <a><text class="about-text"x='56' y='15'>About</text></a>
+            <circle cx='55' cy='55' r='32'></circle> 
+        </svg>
+    </main>
+    <script src="static/script.js"></script>
+</body>
+</html>

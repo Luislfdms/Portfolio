@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include 'navbar.html' %}
+    <title>Experience</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='experience.css') }}">
+</head>
+<body>
+    <header>
+        <h1 class="bordered-text">Experience</h1>
+    </header>
+    <main>
+        <section class = "exp">
+            <h2>Google STEP Internship</h2>
+            <h3>Accomplishments:</h3>
+            <ul>
+                <li><p>{{ accomplished[0] }}</p></li>
+                <li><p>{{ accomplished[1] }}</p></li>
+            </ul>
+            <h3>Technologies Used/Learned:</h3>
+            <ul class="techlist">
+                <li>{{ technology[0] }}</li>
+                <li>{{ technology[1] }}</li>
+                <li>{{ technology[2] }}</li>
+                <li>{{ technology[3] }}</li>
+                <li>{{ technology[4] }}</li>
+                <li>{{ technology[5] }}</li>
+                <li>{{ technology[6] }}</li>
+            </ul>
+            <h3>How did this experience impact me?</h3>
+            <p>{{ learned }}</p>
+        </section>
+    </main>
+    {% include 'footer.html' %}
+</body>
+</html>

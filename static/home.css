@@ -1,0 +1,64 @@
+body, html {
+    background-color: #333;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+svg {
+    height: 500px;
+    width: 500px;
+}
+path {
+    fill: white;
+    stroke: black;
+}
+circle {
+    fill: #333;
+    stroke: black;
+}
+text {
+    text-anchor: middle;
+    dominant-baseline: middle; /* doesn't work in IE */
+    font: 5px Calibri, Arial;
+    color: #333;
+}
+
+h1 {
+    color: white;
+}
+
+@keyframes colorChange {
+    0% {
+      fill: #277abd; /* Start color (left side) */
+    }
+    100% {
+      fill: #d5eb7d; /* End color (right side) */
+    }
+  }
+  
+/* Apply the animation on hover */
+.circle-content:hover {
+    animation: colorChange 1s linear infinite alternate;
+}
+
+.experience-text {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    pointer-events: none;
+}
+
+.about-text {
+    transform-origin: center;
+    transform: rotate(26deg);
+    pointer-events: none;
+}
+
+.project-text {
+    transform-origin: center;
+    transform: rotate(145deg);
+    pointer-events: none;
+}

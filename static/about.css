@@ -1,0 +1,72 @@
+@import "style.css";
+
+body, html {
+    height: 100%;
+    margin: 0;
+    position: relative; 
+}
+
+.about h2, .contact h2, .links h2{
+    color: #333;
+}
+
+.about p, .contact p, .links p{
+    color: #333;
+}
+
+.image-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.image {
+    position: absolute;
+    pointer-events: none;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    object-fit: cover;
+}
+
+.top-left {
+    top: 10%;
+    right: 60%;
+}
+
+.bottom-left {
+    top: 63%;
+    left: 0;
+}
+
+.top-right {
+    top: 10%;
+    left: 60%;
+}
+
+.bottom-right {
+    bottom: 10%;
+    left: 57%;
+}
+
+img {
+    border: 2px solid white;
+}
+
+/* Main content styling */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(21, 38, 189, 0.1);
+    z-index: 1;
+}

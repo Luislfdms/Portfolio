@@ -1,0 +1,32 @@
+@import "style.css";
+
+.exp h2 {
+    color: #333;
+    text-align: center;
+}
+
+.exp h3 {
+    color: #333;
+}
+
+.techlist {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.techlist li {
+    margin-bottom: 10px;
+}
+
+/* Main content styling */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(21, 38, 189, 0.1);
+    z-index: 1;
+}

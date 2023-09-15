@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template
 from pages import index, projects, about, experience
 

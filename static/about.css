@@ -80,8 +80,7 @@ main {
     margin: 20px auto;
     padding: 20px;
     position: relative;
-    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(21, 38, 189, 0.1);
+    background-image: linear-gradient(to bottom right, rgb(210, 213, 197), rgb(255, 255, 255));
     z-index: 1;
 }

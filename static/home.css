@@ -1,5 +1,6 @@
 body, html {
     background-color: #333;
+    overflow: hidden;
 }
 
 main {
@@ -23,7 +24,6 @@ circle {
 
 text {
     text-anchor: middle;
-    dominant-baseline: middle; /* doesn't work in IE */
     font: 5px Calibri, Arial;
     color: #333;
 }

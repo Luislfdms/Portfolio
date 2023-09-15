@@ -60,3 +60,15 @@ h1 {
     transform: rotate(145deg);
     pointer-events: none;
 }
+
+@media (max-width: 767px) {
+    main {
+      flex-direction: column; /* Change to a vertical layout */
+      align-items: center; /* Center items horizontally */
+      justify-content: flex-start; /* Align items to the top */
+    }
+  
+    svg {
+      margin-top: 20px; /* Add some space between h1 and svg */
+    }
+  }

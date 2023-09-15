@@ -70,6 +70,6 @@ h1 {
   
     svg {
       width: 90%;
-      margin-top: 20px; /* Add some space between h1 and svg */
+      margin-top: 10px; /* Add some space between h1 and svg */
     }
   }

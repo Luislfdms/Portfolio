@@ -20,6 +20,28 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.techlist {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.techlist li {
+    margin-bottom: 10px;
+}
+
+li {
+    color: #333;
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 @media (max-width: 768px) {
     .project {
         flex: 1 100%;

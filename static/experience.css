@@ -19,6 +19,11 @@
     margin-bottom: 10px;
 }
 
+li {
+    color: #333;
+    text-decoration: underline;
+}
+
 /* Main content styling */
 main {
     max-width: 1000px;

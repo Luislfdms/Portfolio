@@ -1,7 +1,4 @@
-body, html {
-    background-color: #333;
-    overflow: hidden;
-}
+@import "background.css";
 
 main {
     display: flex;
@@ -14,11 +11,11 @@ svg {
     width: 500px;
 }
 path {
-    fill: white;
+    fill: rgb(227, 222, 222);
     stroke: black;
 }
 circle {
-    fill: #333;
+    fill: #142129;
     stroke: black;
 }
 

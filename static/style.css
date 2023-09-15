@@ -1,21 +1,12 @@
-/* Body styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+@import "background.css";
 
 /* Header styling */
 header {
     text-align: center;
-    background-color: #333;
+    background: #142129;
     color: #fff;
     padding: 10px 0;
-    z-index: 2;
+    z-index: -2;
 }
 
 .bordered-text {
@@ -61,7 +52,7 @@ nav a {
 }
 
 nav a.active {
-    color: #333;
+    background: #142129;
     border-bottom: 2px solid #ffffff;
 }
 

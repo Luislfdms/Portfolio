@@ -13,15 +13,14 @@ def projects():
                        not have a portfolio site! Overall This site was really fun to make however I did run into a couple issues such as the home \
                        page which took me a while to get right but in the end I believe it was well worth it. I will be hosting it on render \
                        as it has great support for flask applications and I already have experience with google cloud and AWS already so I want to try something new.'], 
-                     ['Finance Express','Although this is still in progress as of now I want to include as my other projects I feel are rather small to \
-                       showcase here. Finance Express is a finance tracking application im working on untilizing react native and the plaid api. I am planning \
-                       on working on this app in multiple stages, first I want users to be able to track their expenses and have them placed in categories, \
-                       and be able to create budgets. After these basics of a finance tracking app are working I want to encorporate A.I using openai api. \
-                       The added functionality I want from the A.I is a smart tool that helps you find areas where you can be saving or maybe are being overcharged \
-                       compared to other users.']]
+                     ['Barker','Barker is a X (Twitter) clone created by me and my group for Proccess of Software Engineering class for our Mern Project \
+                       where I was the project lead. We had a limited time frame for the assignment therefore we werent able to roll out all of our \
+                       expected features however I plan on continuing to work on this project further. Currently users are able to create an account \
+                       with 2 factor authentication using email (which we built ourselves), create posts, delete posts, and like/dislike posts. \
+                       Features which I plan to work on include, profile pictures, post images, following, and recommended feed.']]
     technology = [['Python','AWS','Riot API', 'discord.py','selenium','mysql'],
                   ['Python', 'HTML/CSS', 'JavaScript', 'Flask', 'Render', 'Web Development'],
-                  ['React Native and Navigation', 'TypesScript', 'Node.js', 'MongoDB', 'Plaid API', 'Github']]
+                  ['React', 'Express.js', 'Node.js', 'MongoDB', 'HTML/CSS', 'Node Mailer']]
 
     # Render the "projects.html" template with the provided data
     return render_template('projects.html', projects_list=projects_list, technology=technology)

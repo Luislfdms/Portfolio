@@ -5,7 +5,7 @@ from . import about_bp
 @about_bp.route('/')
 def about():
     # Define variables to pass dynamic data to the template
-    about_text = "I am a Junior at the University of Central Florida pursuing my \
+    about_text = "I am a Senior at the University of Central Florida pursuing my \
                   Bachelor's in Computer Science. My professional interest lies in Software Engineering \
                   where I haven't found my niche however I hope that through more experiences working in \
                   the industry I'll find the area that best suits me as a developer. Originally I wanted to study \

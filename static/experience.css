@@ -1,12 +1,7 @@
 @import "style.css";
 
-.exp h2 {
-    color: #333;
+h2 {
     text-align: center;
-}
-
-.exp h3 {
-    color: #333;
 }
 
 .techlist {
@@ -24,14 +19,26 @@ li {
     text-decoration: underline;
 }
 
-/* Main content styling */
-main {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    position: relative;
+/* Experience styling */
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
     background-image: linear-gradient(to bottom right, rgb(210, 213, 197), rgb(255, 255, 255));
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(21, 38, 189, 0.1);
-    z-index: 1;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .experience {
+        flex: 1 100%;
+    }
 }
